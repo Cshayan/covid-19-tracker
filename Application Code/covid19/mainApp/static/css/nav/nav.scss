@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-custom {
+  background: #192A56;
+  color: #fff;
+}
+
+#logo1 {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+
+  h4 {
+    margin: 5px;
+    font-family: 'Lobster', cursive;
+    color: #e67e22;
+
+    .small {
+      font-size: 12px;
+      font-family: sans-serif;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+.rotate {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.our-team-btn {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+
+  i {
+    font-size: 18px;
+  }
+
+  .team-btn {
+    background: #111;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: all 0.5s ease;
+    box-shadow: 0 18px 18px 0 rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      background: #3498db;
+    }
+  }
+}
+
+input[type="file"] {
+  width: 40%;
+  background: #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.custom-btn {
+  color: #fff;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background: #2980b9;
+
+   &:hover {
+     background: #3498db;
+   }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  #logo1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  input[type="file"] {
+    width: 100%;
+  }
+
+
+}

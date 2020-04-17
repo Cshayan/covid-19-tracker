@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar-custom {
+  background: #192A56;
+  color: #fff;
+}
+
+#logo1 {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-brand h4 {
+  margin: 5px;
+  font-family: 'Lobster', cursive;
+  color: #e67e22;
+}
+
+.navbar-brand h4 .small {
+  font-size: 12px;
+  font-family: sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.rotate {
+  -webkit-animation: rotation 5s infinite linear;
+          animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+.our-team-btn {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.our-team-btn a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.our-team-btn i {
+  font-size: 18px;
+}
+
+.our-team-btn .team-btn {
+  background: #111;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0 18px 18px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 18px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.our-team-btn .team-btn:hover {
+  background: #3498db;
+}
+
+input[type="file"] {
+  width: 40%;
+  background: #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.custom-btn {
+  color: #fff;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background: #2980b9;
+}
+
+.custom-btn:hover {
+  background: #3498db;
+}
+
+@media screen and (max-width: 768px) {
+  #logo1 {
+    width: 50px;
+    height: 50px;
+  }
+  input[type="file"] {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
